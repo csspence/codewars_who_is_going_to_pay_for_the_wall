@@ -4,6 +4,10 @@ Don Drumphet lives in a nice neighborhood, but one of his neighbors has started 
 Your code will show Full name of the neighbor and the truncated version of the name as an array. If the number of the characters in name is less than or equal to two, it will return an array containing only the name as is"
 */
 
-function whoIsPaying(name){
-  //your code here
+const whoIsPaying = (name) => {
+  if(name.length <= 2) {
+    return [name];
+  } else {
+    return [name, name[0] + name[1]];
+  }
 }
